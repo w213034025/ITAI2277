@@ -34,8 +34,7 @@ weekly-to-monthly.
 config.py            All tunable parameters (universe, caps, thresholds, costs)
 data_feed.py         yfinance price retrieval + validation (supports an end_date param for historical “as of” runs — see robustness_check.py)
 features.py          Shared feature engineering (volatility, momentum, drawdown, beta) — used by both optimizer context and forecaster.py
-optimizer.py         PyPortfolioOpt mean-variance optimization; accepts an optional mu_override to substitute a non-default
-expected-return estimate
+optimizer.py         PyPortfolioOpt mean-variance optimization; accepts an optional mu_override to substitute a non-default expected-return estimate
 forecaster.py        Pooled ridge/LightGBM return forecaster + walk-forward evaluation utilities
 portfolio_state.py   Current weights, drift calc, trade sizing
 broker_alpaca.py     Alpaca paper-trading adapter
